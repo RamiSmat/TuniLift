@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 body{
-  background-color: #fbfdf4;
+  background-color: #f6fffb;
 }
+
 .navbar-links {
 	color: #18272F;
   position: relative;
   text-decoration: none;
   cursor:pointer;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .navbar-links::before {
   content: '';
   position: absolute;
@@ -31,4 +34,8 @@ body{
 }
 .sidebar{
   cursor:pointer;
+}
+
+.mobile-sidebar{
+  position:absolute
 }

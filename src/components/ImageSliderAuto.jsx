@@ -22,9 +22,9 @@ const ImageSliderAuto = (props) => {
     const NextClick = () => {
 
         setAnimationCls(() => ('displayNone fade'));
-        const myTimeout = setTimeout(() => {
+        const myTimeout = setInterval(() => {
             setAnimationCls('displayBlock fade')
-        }, 100);
+        }, 1000);
 
         if (count <= props.ImageData.length-1) {
             setCount(count+1);
