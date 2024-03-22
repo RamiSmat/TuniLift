@@ -41,7 +41,7 @@ const sendEmail = (e) => {
             <br/>
         
             <div className="container flex flex-wrap gap-10 justify-center place-items-center">
-    <div className=" w-full md:w-1/3">
+    <div className="hidden md:flex w-full md:w-1/3">
         <img className='object-contain hover:object-scale-down' src={contactUS} alt="" />
     </div>
     <form className=" mb-20 md:w-1/3 flex flex-col gap-2 " ref={form} onSubmit={sendEmail}>
@@ -57,7 +57,7 @@ const sendEmail = (e) => {
                 </div>
                 <Label>Message</Label>
                 
-                <Textarea name="message" placeholder='Écrire votre message ici' />
+                <Textarea rows="5" name="message" placeholder='Écrire votre message ici' />
                 
                 <Button type="submit" value="Send" className='bg-[#1E5128] hover:bg-[#4E9F3D]'>Envoyer</Button>
     </form>
