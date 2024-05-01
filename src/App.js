@@ -1,24 +1,21 @@
 import React from "react";
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero";
-import Contact from "./components/Contact";
-import Footer from './components/Footer'
+import Home from "./components/home";
+import Footer from './components/Footer';
+import Ascenseurs from './components/Ascenseurs.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Hero/>
-      <Contact/>
-      <Footer/>
-   {/* <Navbar/>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Hero/>}/>
-      <Route path="/contact" element={<Contact />} />
-       
-    </Routes>
-  </BrowserRouter>  */ }
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ascenseurs" element={<Ascenseurs />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
 
   );
